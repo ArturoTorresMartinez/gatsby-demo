@@ -9,11 +9,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="container-fluid">
-        <div className="row MainRow">
+      <div className="container">
+        <div className="row MainRow p-3 p-lg-5">
           <div className="col">
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
+            <h1>Hi there!</h1>
+            <p>My name is Arturo</p>
             <p>Now go build something great.</p>
             <p>
               <Link to="/page-2/">Go to page 2</Link> <br />

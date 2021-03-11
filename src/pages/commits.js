@@ -93,7 +93,7 @@ const Commits = () => {
       <div className="container my-4">
         <div className="row CommitsMainContainer">
           <div className="col">
-            <h1>Commit history</h1>
+            <h1 className="text-lg-left text-center">Commit history</h1>
             <ul className="ListCommits">
               <RenderItems data={commits} />
             </ul>

@@ -61,7 +61,7 @@ const Categories = () => {
       <div className="container my-4">
         <div className="row MarketplaceMainContainer">
           <div className="col">
-            <h1>Marketplace Categories</h1>
+            <h1 className="text-lg-left text-center">Marketplace Categories</h1>
             <ul className="ListCategories">
               <RenderItems data={categories} />
             </ul>

@@ -18,20 +18,26 @@ const Header = ({ siteTitle }) => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              About me
-            </a>
+          <li className="nav-item">
+            <Link to="/" className="text-decoration-none">
+              <div className="nav-link" href="#">
+                About me
+              </div>
+            </Link>
+          </li>
+          <li className="nav-item text-decoration-none">
+            <Link to="/commits/" className="text-decoration-none">
+              <div className="nav-link" href="#">
+                Commits
+              </div>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Commits
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Companies
-            </a>
+            <Link to="/commits/" className="text-decoration-none">
+              <div className="nav-link" href="#">
+                Companies
+              </div>
+            </Link>
           </li>
         </ul>
       </div>

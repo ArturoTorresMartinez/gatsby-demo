@@ -1,3 +1,5 @@
+@import "../styles/colors";
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -9,8 +11,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #e8eaed;
-  background-color: #1f1f1f;
+  color: $textColor;
+  background-color: $backgroundColor;
   font-family: "Poppins";
   font-weight: normal;
   word-wrap: break-word;

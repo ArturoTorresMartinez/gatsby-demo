@@ -40,7 +40,9 @@ const IndexPage = () => {
     return (
       (data &&
         data.map((data, index) => (
-          <li key={data.node.id}>{data.node.name}</li>
+          <li key={data.node.id}>
+            <p>{data.node.name}</p>
+          </li>
         ))) ||
       null
     )
@@ -74,7 +76,7 @@ const IndexPage = () => {
               <span>{gatsbyRepoData.github.user.company}</span>
             </h2>
             <p>A few of my repositories are:</p>
-            <ul>
+            <ul className="List">
               <RenderItems data={repositories} />
             </ul>
             <p>

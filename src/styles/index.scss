@@ -1,10 +1,18 @@
+@import "../styles/colors";
+
 .MainRow {
   span {
-    color: #02aab0;
+    color: $highlightColor;
+  }
+  .List {
+    color: $highlightColor;
+    p {
+      color: $textColor;
+    }
   }
 
   .AvatarContainer {
-    background-color: white;
+    background-color: $textColor;
     display: flex;
     justify-content: center;
     align-items: center;

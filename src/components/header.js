@@ -33,9 +33,9 @@ const Header = ({ siteTitle }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/commits/" className="text-decoration-none">
+            <Link to="/marketplace/" className="text-decoration-none">
               <div className="nav-link" href="#">
-                Companies
+                Marketplace
               </div>
             </Link>
           </li>

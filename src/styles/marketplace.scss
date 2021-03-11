@@ -1,0 +1,24 @@
+@import "../styles/colors";
+
+.MarketplaceMainContainer {
+  .ListCategories {
+    li {
+      list-style-type: none;
+    }
+    .CategoryContainer {
+      background-color: $lightBackgroundColor;
+      border-width: thin;
+      border-color: $lightTextColor;
+      border-style: solid;
+      .ContainerBody {
+        color: $lightTextColor;
+        font-size: 14px;
+      }
+      .ButtonNav {
+        background-color: $highlightColor;
+        width: 100% !important;
+        font-size: 14px;
+      }
+    }
+  }
+}

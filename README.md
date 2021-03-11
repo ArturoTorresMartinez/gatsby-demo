@@ -53,6 +53,10 @@ gatsby serve
 
 And open in your browser `localhost:9000` or the selected port at the time of compilation.
 
+## All done!
+
+An example site should be available at [Netlify](https://nifty-elion-949ad3.netlify.app/) for comparison
+
 ## Credit
 
 All credit goes to overdosing on caffeine.

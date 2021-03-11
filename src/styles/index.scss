@@ -1,0 +1,20 @@
+@import "../styles/colors";
+
+.MainRow {
+  span {
+    color: $highlightColor;
+  }
+  .ListRepositories {
+    color: $highlightColor;
+    p {
+      color: $textColor;
+    }
+  }
+
+  .AvatarContainer {
+    background-color: $textColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

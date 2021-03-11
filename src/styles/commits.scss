@@ -1,0 +1,25 @@
+@import "../styles/colors";
+
+.CommitsMainContainer {
+  .ListCommits {
+    li {
+      list-style-type: none;
+    }
+    .CommitContainer {
+      background-color: $lightBackgroundColor;
+      border-width: thin;
+      border-color: $lightTextColor;
+      border-style: solid;
+      .MessageBody {
+        color: $lightTextColor;
+      }
+      .TimeAgo {
+        font-size: 14px;
+      }
+    }
+    .Line {
+      background-color: $highlightColor;
+      width: 10px;
+    }
+  }
+}

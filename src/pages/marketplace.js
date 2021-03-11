@@ -30,13 +30,13 @@ const Categories = () => {
         data.map((data, index) => (
           <li key={data.name}>
             <div className="row">
-              <div className="col-10 CategoryContainer py-3 rounded">
+              <div className="col-12 CategoryContainer py-3 rounded">
                 <div className="row">
-                  <div className="col-10">
+                  <div className="col-12 col-lg-10">
                     <p>{data.name}</p>
                     <p className="ContainerBody">{data.description}</p>
                   </div>
-                  <div className="col-2 justify-content-center align-items-center d-flex">
+                  <div className="col-12 col-lg-2 justify-content-center align-items-center d-flex mt-2 mt-lg-0">
                     <a
                       href={data.url}
                       target="_blank"

@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -19,25 +19,40 @@ const Header = ({ siteTitle }) => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/" className="text-decoration-none">
+            <AniLink
+              swipe
+              direction="right"
+              to="/"
+              className="text-decoration-none"
+            >
               <div className="nav-link" href="#">
                 About me
               </div>
-            </Link>
+            </AniLink>
           </li>
           <li className="nav-item text-decoration-none">
-            <Link to="/commits/" className="text-decoration-none">
+            <AniLink
+              swipe
+              direction="left"
+              to="/commits/"
+              className="text-decoration-none"
+            >
               <div className="nav-link" href="#">
                 Commits
               </div>
-            </Link>
+            </AniLink>
           </li>
           <li className="nav-item">
-            <Link to="/marketplace/" className="text-decoration-none">
+            <AniLink
+              swipe
+              direction="left"
+              to="/marketplace/"
+              className="text-decoration-none"
+            >
               <div className="nav-link" href="#">
                 Marketplace
               </div>
-            </Link>
+            </AniLink>
           </li>
         </ul>
       </div>

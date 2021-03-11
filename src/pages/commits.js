@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import "../styles/commits.scss"
+import { DateTime } from "luxon"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -43,8 +44,20 @@ const Commits = () => {
     gatsbyRepoData.github.repository.ref.target.history.edges
   )
 
+  const units = ["year", "month", "week", "day", "hour", "minute", "second"]
+
+  const timeAgo = date => {
+    let dateTime = DateTime.fromISO(date)
+    const diff = dateTime.diffNow().shiftTo(...units)
+    const unit = units.find(unit => diff.get(unit) !== 0) || "second"
+
+    const relativeFormatter = new Intl.RelativeTimeFormat("en", {
+      numeric: "auto",
+    })
+    return relativeFormatter.format(Math.trunc(diff.as(unit)), unit)
+  }
+
   const RenderItems = ({ data }) => {
-    console.log("data", data)
     return (
       (data &&
         data.map((data, index) => (
@@ -60,11 +73,11 @@ const Commits = () => {
                       className="rounded-circle"
                     />
                   </div>
-                  <div className="col-8 col-lg-10">
+                  <div className="col-10 col-lg-11">
                     <p className="p-0 m-0 mb-2">{data.node.messageHeadline}</p>
                     <p className="MessageBody">{data.node.messageBody}</p>
+                    <p className="TimeAgo"> {timeAgo(data.node.pushedDate)}</p>
                   </div>
-                  <div className="col-2 col-lg-1"></div>
                 </div>
               </div>
             </div>

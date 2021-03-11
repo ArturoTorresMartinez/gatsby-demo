@@ -76,7 +76,7 @@ const IndexPage = () => {
               <span>{gatsbyRepoData.github.user.company}</span>
             </h2>
             <p>A few of my repositories are:</p>
-            <ul className="List">
+            <ul className="ListRepositories">
               <RenderItems data={repositories} />
             </ul>
           </div>

@@ -91,10 +91,10 @@ const Commits = () => {
     <Layout>
       <SEO title="Commits" />
       <div className="container my-4">
-        <div className="row">
+        <div className="row CommitsMainContainer">
           <div className="col">
             <h1>Commit history</h1>
-            <ul className="List">
+            <ul className="ListCommits">
               <RenderItems data={commits} />
             </ul>
           </div>

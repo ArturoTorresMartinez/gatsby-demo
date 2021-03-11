@@ -12,7 +12,7 @@ const Commits = () => {
       github {
         repository(name: "gatsby-demo", owner: "ArturoTorresMartinez") {
           name
-          ref(qualifiedName: "develop") {
+          ref(qualifiedName: "main") {
             name
             target {
               ... on GitHub_Commit {

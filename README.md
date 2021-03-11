@@ -11,7 +11,7 @@ npm install npm@latest -g
 npm install -g gatsby-cli
 ```
 
-Then, clone the [repo](https://github.com/ArturoTorresMartinez/gatsby-demo/tree/develop) and once opened locally switch to the DEVELOP branch
+Then, clone the [repo](https://github.com/ArturoTorresMartinez/gatsby-demo)
 
 Create two new files at root level of the directory
 

@@ -9,8 +9,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: #e8eaed;
+  background-color: #1f1f1f;
+  font-family: "Poppins";
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

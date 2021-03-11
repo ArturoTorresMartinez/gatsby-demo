@@ -4,7 +4,7 @@ This is a quick Gatsby demo using the Github API to display data from the repo i
 
 ## Installation
 
-First you'll need [npm](https://docs.npmjs.com/about-npm-versions) and the [Gatsby CLI](https://www.gatsbyjs.com/get-started/) to run the project.
+First you'll need [npm](https://nodejs.org/es/download/) and the [Gatsby CLI](https://www.gatsbyjs.com/get-started/) to run the project.
 
 ```bash
 npm install npm@latest -g

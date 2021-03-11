@@ -5,7 +5,7 @@ import "../styles/marketplace.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Commits = () => {
+const Categories = () => {
   const gatsbyRepoData = useStaticQuery(graphql`
     query {
       github {
@@ -72,4 +72,4 @@ const Commits = () => {
   )
 }
 
-export default Commits
+export default Categories
